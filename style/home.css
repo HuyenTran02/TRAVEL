@@ -64,28 +64,86 @@ header {
     left: 30px;
   }
 
-          /*----- Slogan-header ----- */
+/*----- Slogan-header ----- */
 
-  .Slogan {
-    height: calc(100% - 87px);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.25);
+.Slogan {
+  height: calc(100% - 87px);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.Slogan-text {
+  width: 70%;
+}
+
+.Slogan-text p {
+  font-family: Slogan;
+  width: 80%;
+  color: paleturquoise;
+  font-size: 75px;
+}
+
+.Slogan-btn {
+  width: 30%;
+  animation: btn 2s ease-in-out infinite alternate;
+}
+
+  .in-line {
+    background: skyblue;
+    padding: 15px 20px;
+    margin: 2.5%;
+    position: relative;
+    overflow: hidden;
   }
 
-  .Slogan > span {
-    font-family: Slogan;
-    display: inline-block;
-    width: 60%;
-    color: rgb(194, 233, 247);
-    font-size: 100px;
+  .in-line a {
+    color: darkcyan;
+    font-weight: 500;
+    display: block;
   }
 
-  @keyframes fade {
+  .in-line::before {
+    content: "";
+    width: 120%;
+    height: 100%;
+    background: teal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-35deg) translateX(-120%);
+    transition: transform 0.5s ease-out;
+  }
+
+  .out-line {
+    border: 1px solid silver;
+    width: 70%;
+  }
+
+  .out-line:hover .in-line::before {
+    transform: skewX(-35deg) translateX(-10%);
+  }
+
+  .out-line:hover a {
+    color: lightcyan;
+    position: relative;
+    z-index: 999;
+  }
+
+  @keyframes btn {
+    0%, 100% {
+      transform:translateY(10%);
+    }
+    50% {
+      transform: translateY(-10%);
+    }
+  }
+
+  /* @keyframes fade {
     0% {
       transform: translateY(-30px);
       opacity: 0;
     }
-  }
+  } */
 
 /*----- Kham pha ----- */
 

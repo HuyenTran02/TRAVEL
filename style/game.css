@@ -1,0 +1,100 @@
+@font-face {
+    font-family: title;
+    src: url("/font/Lora-Regular.ttf");
+}
+
+*{
+    font-family: title;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 55px;
+    color: #6dbfe2;
+    font-family: title;
+    text-align: center;
+}
+ 
+h1::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 150px;
+    background-color:#6dbfe2;
+    /*border-radius: 10px;*/
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1::after {
+    position: absolute;
+    content: "\2764";
+    top:13%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 30px;
+    color: red;
+    background-color: #fff;
+    bottom: -20px;
+    font-size: 75%;
+}
+
+.question p{
+    font-size: 18px;
+    text-align: center;
+    margin-top: -13px ;
+}
+
+.img {
+    width: 55%;
+    margin: 0 auto;
+}
+
+div img{
+    width: 100%;
+}
+
+input[type = "text"] {
+    width:60% ;
+    margin:5% ;
+    height:30px ;
+   
+}
+
+input[type = "button"] {
+    width:20% ;
+    height:36px ;
+    background-color: #6dbfe2;
+    border: 1px solid lightgray ;
+    color:white ;    
+}
+
+.backpage{
+    font-size: 30px;
+    margin: -20px;
+
+}
+.backpage i{
+    margin: 10px ;
+    color: lightskyblue;
+}
+
+input[type = "button"]:hover{
+    color:#6dbfe2 ;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    font-weight: 600;
+
+}
+
+.backpage i:hover{
+    color:darkcyan ;
+    transition: all 0.5s ease;
+ }

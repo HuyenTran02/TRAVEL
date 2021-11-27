@@ -93,7 +93,7 @@ const handBooks = [
     {
         img: '/images/news/nhahang.jpg',
         name: 'Top 5 nhà hàng Việt Nam ngon ở Sài Gòn níu chân du khách.',
-        date: '24/09/202',
+        date: '24/09/2021',
         info: `<p><b>Thật khôn ngoa khi nói Sài Gòn là một thiên đường ẩm thực. Sài Gòn là nơi giao thoa
                     của nhiều nền văn hóa độc đáo và đặc sắc, vì thế nền ẩm thực nơi đây cũng vô cùng đa
                     dạng. Giữa vô vàn nhà hàng phục vụ ẩm thực các nước trên thế giới, nhưng nhà hàng
